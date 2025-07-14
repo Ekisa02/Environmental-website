@@ -1,3 +1,11 @@
+## 🌍 Live Website Demo
+
+### Homepage
+![Homepage](demo/homepage.png)
+
+### Events Section
+![About us](demo/aboutpage.png)
+
 # Eldoret Green Future Alliance - Environmental Website
 
 Official website for Eldoret Green Future Alliance – a community-driven initiative focused on environmental conservation, tree planting, climate advocacy, and youth engagement in sustainability.
