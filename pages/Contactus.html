@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us | Eldoret Green Future Alliance</title>
+  <script src="/backend/home.js" defer> </script>
+  <link rel="stylesheet" href="/css/Contactus.css" />
+  <link rel="stylesheet" href="/css/Homepage.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+
+</head>
+<body >
+
+  <!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo-container">
+            <img src="../assets/images/logo.jpeg" alt="EcoGuardians Logo" class="logo">
+            <h1 class="org-name">Eldoret <span class="purple-text" style="color:  purple;">Green Future</span> <span class="orange-text" style="color: yellow;">Alliance</span></h1>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="/pages/homepage.html" >Home</a></li>
+                <li><a href="/pages/about.html">About Us</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="Contactus.html" class="active">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+</header>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="video-container">
+    <video id="heroVideo" autoplay muted loop playsinline>
+      <source src="https://www.w3schools.com/howto/rain.mp4" type="video/mp4">
+      <!-- fallback text -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+  <div class="hero-content" data-aos="fade-down">
+    <h1>Welcome to Our Green Future forum</h1>
+    <p>Join us in building a sustainable planet.</p>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+
+      <h2 class="section-title" data-aos="fade-up">📞 Contact Us</h2>
+      <p class="section-description" data-aos="fade-up" data-aos-delay="100">We’d love to hear from you. Whether you have a question, suggestion, or want to get involved!</p>
+
+      <div class="contact-grid">
+
+        <!-- Contact Form -->
+        <form class="contact-form" data-aos="fade-right" id="contactForm">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <input type="text" placeholder="Subject" />
+          <textarea placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+
+        <!-- Contact Info -->
+        <div class="contact-info" data-aos="fade-left">
+          <h3>Get in Touch</h3>
+          <ul>
+            <li><i class="fas fa-map-marker-alt"></i> Eldoret City, Kenya</li>
+            <li><i class="fas fa-envelope"></i> eldoretgreenfuturealliance@gmail.com</li>
+            <li><i class="fas fa-phone"></i> +254 741 187 375</li>
+          </ul>
+          <div class="map-container">
+            <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.062206006728!2d35.2785099!3d0.5142777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182aa2f82e34caa1%3A0xa14a2e9c479c34fd!2sEldoret%2C%20Kenya!5e0!3m2!1sen!2ske!4v1688398452000!5m2!1sen!2ske" 
+              width="100%" height="250" style="border:0;" 
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 <span class="highlight-purple">Eldoret Green future</span> <span class="highlight-orange">Alliance</span>. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  
+  <style>
+    .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 320px;
+  background: linear-gradient(120deg, #a8edea 0%, #fed6e3 100%);
+  position: relative;
+  overflow: hidden;
+  animation: fadeIn 1.2s;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+  opacity: 0.45;
+  z-index: 0;
+  animation: heroBgMove 12s ease-in-out infinite alternate;
+}
+@keyframes heroBgMove {
+  0% { background-position: center 40%; }
+  100% { background-position: center 60%; }
+}
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  width: 100%;
+  color: #fff;
+  text-shadow: 0 2px 16px rgba(0,0,0,0.18);
+}
+.hero-content h1 {
+  font-size: 2.7rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-shadow: 0 2px 16px rgba(37,117,252,0.18);
+}
+.hero-content p {
+  color: #e0f7fa;
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+/* Hide video for now, since we use a background image */
+.video-container { display: none; }
+  </style>
+  <script>
+document.querySelector('.contact-form').addEventListener('submit', async function(e) {
+  e.preventDefault();
+  const [name, email, subject, message] = Array.from(this.elements).map(el => el.value);
+  const res = await fetch('http://localhost:3001/api/contact', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ name, email, subject, message })
+  });
+  const data = await res.json();
+  alert(data.message);
+  this.reset();
+});
+</script>
+</body>
+</html>
