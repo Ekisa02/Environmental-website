@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Justus Kipkogei Rotich",
+    "title": "Founder & Chairperson",
+    "photo": "../assets/images/testimonial.jpg",
+    "occupation": "Strategic Lead",
+    "description": "Leads EGFEA’s strategic vision, school greening initiatives, eco‑club development, and mental wellness advocacy among youth and communities."
+  },
+  {
+    "name": "Evans Kipruto",
+    "title": "Co-Founder & Vice Chairperson",
+    "photo": "../assets/images/testimonial.jpg",
+    "occupation": "Project Development & Outreach",
+    "description": "Supports project development, school outreach, and partnership coordination to strengthen environmental impact on the ground."
+  },
+  {
+    "name": "Mercy Kipruto",
+    "title": "Co-Founder & Secretary",
+    "photo": "../assets/images/testimonial.jpg",
+    "occupation": "Secretary",
+    "description": "Oversees communication, meeting organization, and documentation of the alliance’s activities and decisions."
+  },
+  {
+    "name": "Ekisa Joseph",
+    "title": "Lead Developer",
+    "photo": "../assets/images/testimonial.jpg",
+    "occupation": "System/Software Developer",
+    "description": "Engineers the website and general system of the organization. Ensures that the organization's data is secure."
+  },
+  {
+    "name": "Agnes Waithira",
+    "title": "Co-Founder & Treasurer",
+    "photo": "../assets/images/testimonial.jpg",
+    "occupation": "Treasurer",
+    "description": "Manages budgeting and finances, ensuring transparency and accountability in EGFEA’s resource use."
+  },
+  {
+    "name": "Caleb Kiptoo",
+    "title": "Committee Member",
+    "photo": "../assets/images/testimonial.jpg",
+    "occupation": "School Activities Assistant",
+    "description": "Assists with school eco-club activities and coordination during community events."
+  },
+  {
+    "name": "Caroline Jepkirui",
+    "title": "Committee Member",
+    "photo": "../assets/images/testimonial.jpg",
+    "occupation": "Volunteer Coordinator",
+    "description": "Supports mobilization of volunteers and helps in planning and logistics during tree planting and environmental campaigns."
+  },
+  {
+    "name": "Allan Kipngetich",
+    "title": "Committee Member",
+    "photo": "../assets/images/testimonial.jpg",
+    "occupation": "Outreach Officer",
+    "description": "Contributes to project implementation and supports outreach activities across schools and neighborhoods."
+  },
+  {
+    "name": "Faith Kottam",
+    "title": "Committee Member",
+    "photo": "../assets/images/testimonial.jpg",
+    "occupation": "Wellness & Awareness",
+    "description": "Engages in wellness initiatives and environmental awareness programs within the community."
+  }
+]

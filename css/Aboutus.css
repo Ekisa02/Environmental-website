@@ -1,3 +1,4 @@
+import 
 * {
   margin: 0;
   padding: 0;
@@ -222,24 +223,48 @@ body {
   transition: transform 0.4s ease;
 }
 
+.team-title {
+  color: purple;
+  font-weight: bold;
+  margin: 4px 0;
+  font-size: 1rem;
+  align-self: self-start;
+}
+
+
 .team-name {
   font-size: 1.2rem;
+  background-color: #6a11cb;
+  border-radius: 10px;
+  width: 100%;
   margin: 0;
   font-weight: 700;
-  color: #333;
+  color: black;
 }
 
 .team-occupation {
   font-style: italic;
-  color: #555;
+  color: yellow;
   margin: 5px 0 10px;
+  font-weight: bold;
+
 }
 
 .team-description {
   font-size: 0.9rem;
   color: #666;
+  line-height: 1.4;
+  margin: 0;
+  padding: 10px;
+  align-items: start;
+  text-align: left;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
 }
-
+.team-description:hover{
+  color:white;
+  background-color: #444;
+}
 /* Hover effects */
 .team-card:hover {
   transform: scale(1.05) translateX(10px);
@@ -257,6 +282,18 @@ body {
 .team-card:hover .team-description {
   color: #fff;
 }
+
+#load-more-btn, #loadMoreBtn{
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
 
 /* Bounce animation */
 @keyframes bounce {
@@ -329,6 +366,39 @@ body {
 .call-to-action button:hover {
   background-color: #276749;
 }
+/*achievements section */
+.project-highlight {
+  background: #f9fbe7;
+  border-left: 6px solid #81c784;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.project-highlight h3 {
+  color: #2e7d32;
+  margin-bottom: 0.75rem;
+  font-size: 1.3rem;
+}
+
+.project-highlight h4 {
+  margin-top: 1rem;
+  color: #558b2f;
+  font-size: 1.1rem;
+}
+
+.project-highlight ul li {
+  margin-bottom: 0.5rem;
+}
+
+.photo-caption {
+  font-style: italic;
+  color: #555;
+  margin-top: 1rem;
+  font-size: 0.95rem;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
