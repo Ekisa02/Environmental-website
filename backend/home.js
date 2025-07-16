@@ -14,10 +14,17 @@ toggleBtn.addEventListener("click", () => {
       }
     });
   });
+  //hero section
+  const cards = [document.getElementById("card1"), document.getElementById("card2"), document.getElementById("card3")];
+  let index = 0;
 
- let index=0;
- const track= document.getElementById('carousel-track');
-const totalCards = document.querySelectorAll('.carousel-card').length;
+  function showNextCard() {
+    cards[index].classList.remove("active-card");
+    index = (index + 1) % cards.length;
+    cards[index].classList.add("active-card");
+  }
+
+  setInterval(showNextCard, 5000); // Change card every 5 seconds
 
 //load more projects
 

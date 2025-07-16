@@ -24,7 +24,7 @@
           <li><a href="/pages/about.html">About Us</a></li>
           <li><a href="programs.html">Programs</a></li>
           <li><a href="/pages/Contactus.html#contactForm">Get Involved</a></li>
-          <li><a href="news.html">News</a></li>
+          <li><a href="#newsletter">News</a></li>
           <li><a href="/pages/Contactus.html">Contact</a></li>
         </ul>
       </nav>
@@ -34,37 +34,43 @@
     </div>
   </header>
   <main>
+<section class="hero">
+  <video autoplay muted loop class="bg-video">
+    <source src="/assets/Video/green-earth.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
 
-    <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-inner">
-        <!-- Left: Text -->
-        <div class="hero-content">
-          <h1>Green Earth Initiative</h1>
-          <p>Join us in making the planet greener through impactful actions.</p>
-        </div>
-        <!-- Right: Carousel -->
-        <div class="carousel-container">
-          <div class="carousel-track" id="carouselTrack">
-            <div class="card">
-              <img src="/assets/images/loader.jpeg" alt="Tree Planting" />
-              <h3>Tree Planting</h3>
-              <p>We plant trees to restore forests and absorb carbon.</p>
-            </div>
-            <div class="card">
-              <img src="/assets/images/gallery1.jpeg" alt="Clean-Up Drives" />
-              <h3>Clean-Up Drives</h3>
-              <p>Removing plastic waste from communities and nature.</p>
-            </div>
-            <div class="card">
-              <img src="/assets/images/gallery2.jpeg" alt="Eco-Education" />
-              <h3>Eco-Education</h3>
-              <p>Teaching youth about protecting our planet.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+  <div class="overlay"></div>
+
+  <div class="hero-inner">
+    <!-- Left: Text -->
+    <div class="hero-content fade-in-left">
+      <h1>🌍 Green Earth Initiative</h1>
+      <p>Join us in making the planet greener through impactful actions.</p>
+    </div>
+
+    <!-- Right: Carousel -->
+  <div class="carousel-container fade-in-right">
+  <div class="card active-card" id="card1">
+    <img src="/assets/images/loader.jpeg" alt="Tree Planting" />
+    <h3>Tree Planting</h3>
+    <p>We plant trees to restore forests and absorb carbon.</p>
+  </div>
+  <div class="card" id="card2">
+    <img src="/assets/images/gallery1.jpeg" alt="Clean-Up Drives" />
+    <h3>Clean-Up Drives</h3>
+    <p>Removing plastic waste from communities and nature.</p>
+  </div>
+  <div class="card" id="card3">
+    <img src="/assets/images/gallery2.jpeg" alt="Eco-Education" />
+    <h3>Eco-Education</h3>
+    <p>Teaching youth about protecting our planet.</p>
+  </div>
+</div>
+
+  </div>
+</section>
+
 
 
     <!-- Mission Section -->
@@ -346,7 +352,7 @@
     </section>
 
     <!-- Newsletter -->
-    <section class="newsletter">
+    <section class="newsletter" id="newsletter">
       <div class="container">
         <div class="newsletter-content">
           <h2>Stay Updated</h2>
