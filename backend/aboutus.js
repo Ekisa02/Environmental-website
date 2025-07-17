@@ -1,34 +1,42 @@
-const videoSources = [
-  "/assets/Video/forest.mp4",
-  "/assets/Video/clean-energy.mp4",
-  "/assets/Video/green-earth.mp4",
-];
-
 const videoElement = document.getElementById("heroVideo");
-let currentVideoIndex = 0;
 
-function playNextVideo() {
-  // Fade out
+// Improved video loading with error handling
+function handleVideoLoad() {
   videoElement.style.opacity = 0;
-
-  // Load the next video after fade-out
-  setTimeout(() => {
-    videoElement.src = videoSources[currentVideoIndex];
-    videoElement.load();
-
-    // Play after it's loaded
-    videoElement.oncanplay = () => {
-      videoElement.play();
-      videoElement.style.opacity = 1; // Fade in
-    };
-
-    currentVideoIndex = (currentVideoIndex + 1) % videoSources.length;
-  }, 1000);
+  
+  const playPromise = videoElement.play();
+  
+  if (playPromise !== undefined) {
+    playPromise
+      .then(() => {
+        videoElement.style.opacity = 1;
+      })
+      .catch(error => {
+        console.log("Autoplay prevented:", error);
+        videoElement.muted = true; // Ensure muted for autoplay
+        videoElement.play().then(() => {
+          videoElement.style.opacity = 1;
+        });
+      });
+  }
 }
 
-// Start with the first video
-videoElement.addEventListener("ended", playNextVideo);
-playNextVideo();
+// Check if video is already loaded
+if (videoElement.readyState >= 3) {
+  handleVideoLoad();
+} else {
+  videoElement.addEventListener('canplay', handleVideoLoad);
+}
+
+// Fallback if video fails to load
+videoElement.addEventListener('error', () => {
+  console.error("Video failed to load");
+  videoElement.style.display = 'none';
+});
+
+
+
+
 
 // gallery images
 const galleryImages = [
@@ -175,7 +183,7 @@ const teamData = [
   {
     name: "Ekisa Joseph",
     title: "Lead Developer",
-    photo: "../assets/images/profile4.jpg",
+    photo: "../assets/images/testimonial.jpg",
     occupation: "System/Software Developer",
     description:
       "Engineers the website and general system of the organization. Ensures that the organization's data is secure.",

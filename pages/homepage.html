@@ -22,7 +22,7 @@
         <ul>
           <li><a href="#" class="active">Home</a></li>
           <li><a href="/pages/about.html">About Us</a></li>
-          <li><a href="programs.html">Programs</a></li>
+          <li><a href="#projectsSection">Programs</a></li>
           <li><a href="/pages/Contactus.html#contactForm">Get Involved</a></li>
           <li><a href="#newsletter">News</a></li>
           <li><a href="/pages/Contactus.html">Contact</a></li>
@@ -34,43 +34,135 @@
     </div>
   </header>
   <main>
+
+    <!-- Hero Section with Video Background -->
 <section class="hero">
-  <video autoplay muted loop class="bg-video">
-    <source src="/assets/Video/green-earth.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
+  <div class="video-container">
+    <video autoplay muted loop class="bg-video">
+      <source src="/assets/Video/green-earth.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div class="video-overlay"></div>
+  </div>
 
-  <div class="overlay"></div>
-
-  <div class="hero-inner">
-    <!-- Left: Text -->
-    <div class="hero-content fade-in-left">
-      <h1>🌍 Green Earth Initiative</h1>
-      <p>Join us in making the planet greener through impactful actions.</p>
+  <div class="hero-container">
+    <div class="hero-content">
+      <div class="content-wrapper">
+        <div class="tagline pulse">Join the Movement</div>
+        <h1>Green Earth <span>Initiative</span></h1>
+        <p class="lead">Empowering communities to restore our planet through direct action and education</p>
+        <div class="cta-buttons">
+          <a href="/pages/Contactus.html#contactForm" class="btn primary glow-on-hover">
+            <span>Get Involved</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+          <a href="/pages/about.html" class="btn secondary">
+            <span>Learn More</span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 12H15M12 9V15M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
 
-    <!-- Right: Carousel -->
-  <div class="carousel-container fade-in-right">
-  <div class="card active-card" id="card1">
-    <img src="/assets/images/loader.jpeg" alt="Tree Planting" />
-    <h3>Tree Planting</h3>
-    <p>We plant trees to restore forests and absorb carbon.</p>
-  </div>
-  <div class="card" id="card2">
-    <img src="/assets/images/gallery1.jpeg" alt="Clean-Up Drives" />
-    <h3>Clean-Up Drives</h3>
-    <p>Removing plastic waste from communities and nature.</p>
-  </div>
-  <div class="card" id="card3">
-    <img src="/assets/images/gallery2.jpeg" alt="Eco-Education" />
-    <h3>Eco-Education</h3>
-    <p>Teaching youth about protecting our planet.</p>
-  </div>
-</div>
-
+    <div class="carousel-container">
+      <div class="carousel-track">
+        <div class="card active" data-index="0">
+          <div class="card-image">
+            <img src="/assets/images/loader.jpeg" alt="Tree Planting" />
+            <div class="card-badge">Initiative #1</div>
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <div class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L3 9L12 16L21 9L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 9H21M9 14V22H15V14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Tree Planting</h3>
+            <p>We plant native trees to restore ecosystems and combat climate change through natural carbon sequestration.</p>
+            <a href="#" class="card-link">
+              <span>See projects</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="card" data-index="1">
+          <div class="card-image">
+            <img src="/assets/images/gallery1.jpeg" alt="Clean-Up Drives" />
+            <div class="card-badge">Initiative #2</div>
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <div class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 6H5M5 6H21M5 6V20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V6H5ZM8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M10 11V17M14 11V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Clean-Up Drives</h3>
+            <p>Community-led efforts to remove plastic waste from beaches, parks, and urban areas.</p>
+            <a href="#" class="card-link">
+              <span>Join a drive</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        
+        <div class="card" data-index="2">
+          <div class="card-image">
+            <img src="/assets/images/gallery2.jpeg" alt="Eco-Education" />
+            <div class="card-badge">Initiative #3</div>
+            <div class="card-overlay"></div>
+          </div>
+          <div class="card-content">
+            <div class="card-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L3 7L12 12L21 7L12 2Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 12L12 17L21 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M3 17L12 22L21 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <h3>Eco-Education</h3>
+            <p>Interactive programs teaching sustainable practices to schools and organizations.</p>
+            <a href="#" class="card-link">
+              <span>Explore programs</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="carousel-controls">
+        <button class="control-btn prev" aria-label="Previous card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M15 18L9 12L15 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+        <div class="indicators">
+          <button class="indicator active" data-index="0" aria-label="Go to card 1"></button>
+          <button class="indicator" data-index="1" aria-label="Go to card 2"></button>
+          <button class="indicator" data-index="2" aria-label="Go to card 3"></button>
+        </div>
+        <button class="control-btn next" aria-label="Next card">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9 6L15 12L9 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </button>
+      </div>
+    </div>
   </div>
 </section>
-
 
 
     <!-- Mission Section -->
@@ -138,7 +230,7 @@
     </section>
 
     <!-- Current Projects -->
-<section class="projects-section">
+<section class="projects-section" id="projectsSection">
   <div class="projects-grid" id="projectsGrid">
     <!-- Dynamic Project Cards Inserted Here -->
   </div>
@@ -377,10 +469,19 @@
           </h3>
           <p>Protecting today for a greener tomorrow.</p>
           <div class="social-links">
-            <a href="#"><i class="fab fa-facebook-f"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=61577616141699"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="https://twitter.com/EGFA_Kenya"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a href="https://www.linkedin.com/groups/10146280"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/eldoretgreenfutures2025/profilecard/?igsh=eG5ib2w0MXlnOG10"
+              ><i class="fab fa-instagram"></i
+            ></a>
           </div>
         </div>
         <!-- Quick Links -->
@@ -388,8 +489,8 @@
           <h3>Quick Links</h3>
           <ul>
             <li><a href="#">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="programs.html">Programs</a></li>
+            <li><a href="/pages/about.html">About Us</a></li>
+            <li><a href="#projectsSection">Programs</a></li>
             <li><a href="get-involved.html">Get Involved</a></li>
           </ul>
         </div>
